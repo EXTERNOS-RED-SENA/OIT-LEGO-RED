@@ -15,8 +15,7 @@ const router = new VueRouter({
     {
       path: '/introduccion',
       name: 'introduccion',
-      component: () =>
-        import(/* webpackChunkName: "intro" */ '../views/Introduccion.vue'),
+      component: () => import('../views/Introduccion.vue'),
     },
     {
       path: '/curso',
@@ -29,72 +28,59 @@ const router = new VueRouter({
         {
           path: 'tema1',
           name: 'tema1',
-          component: () =>
-            import(/* webpackChunkName: "tema1" */ '../views/Tema1.vue'),
+          component: () => import('../views/Tema1.vue'),
         },
         {
           path: 'tema2',
           name: 'tema2',
-          component: () =>
-            import(/* webpackChunkName: "tema2" */ '../views/Tema2.vue'),
+          component: () => import('../views/Tema2.vue'),
         },
         {
           path: 'tema3',
           name: 'tema3',
-          component: () =>
-            import(/* webpackChunkName: "tema3" */ '../views/Tema3.vue'),
+          component: () => import('../views/Tema3.vue'),
         },
         {
           path: 'tema4',
           name: 'tema4',
-          component: () =>
-            import(/* webpackChunkName: "tema4" */ '../views/Tema4.vue'),
+          component: () => import('../views/Tema4.vue'),
         },
         {
           path: 'tema5',
           name: 'tema5',
-          component: () =>
-            import(/* webpackChunkName: "tema5" */ '../views/Tema5.vue'),
+          component: () => import('../views/Tema5.vue'),
         },
       ],
     },
     {
       path: '/actividad',
       name: 'actividad',
-      component: () =>
-        import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
+      component: () => import('../views/Actividad.vue'),
     },
     {
       path: '/glosario',
       name: 'glosario',
-      component: () =>
-        import(/* webpackChunkName: "glosario" */ '../views/Glosario.vue'),
+      component: () => import('../views/Glosario.vue'),
     },
     {
       path: '/complementario',
       name: 'complementario',
-      component: () =>
-        import(/* webpackChunkName: "comple" */ '../views/Complementario.vue'),
+      component: () => import('../views/Complementario.vue'),
     },
     {
       path: '/referencias',
       name: 'referencias',
-      component: () =>
-        import(
-          /* webpackChunkName: "referencias" */ '../views/Referencias.vue'
-        ),
+      component: () => import('../views/Referencias.vue'),
     },
     {
       path: '/sintesis',
       name: 'sintesis',
-      component: () =>
-        import(/* webpackChunkName: "sintesis" */ '../views/sintesis.vue'),
+      component: () => import('../views/sintesis.vue'),
     },
     {
       path: '/creditos',
       name: 'creditos',
-      component: () =>
-        import(/* webpackChunkName: "creditos" */ '../views/Creditos.vue'),
+      component: () => import('../views/Creditos.vue'),
     },
   ],
   scrollBehavior(to, from) {
