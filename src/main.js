@@ -6,7 +6,7 @@ import legored from 'legored'
 
 import './styles/_styles.sass'
 
-import config from './js/global'
+import config from './js/json'
 //Vue.prototype.$config = config
 
 const packageJson = require('../package.json')

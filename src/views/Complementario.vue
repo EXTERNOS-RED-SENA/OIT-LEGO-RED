@@ -26,10 +26,25 @@ export default {
   name: 'MaterialComplementario',
   computed: {
     complementarioData() {
-      return this.$config.complementario
+      return [
+        {
+          tema: '1. Fundamentos de datos y estructuras',
+          referencia:
+            'Ecosistema de Recursos Educativos Digitales SENA. (2023c, septiembre 5). <i>Ejemplo problemas en la recolección de la información</i>.',
+          tipo: 'Video',
+          link: 'https://www.youtube.com/watch?v=LOlsg6ZkdcA ',
+        },
+        {
+          tema: '2. Calidad y tratamiento de datos',
+          referencia:
+            'Ecosistema de Recursos Educativos Digitales SENA. (2023b, septiembre 5). <i>Datos sucios</i>.',
+          tipo: 'Video',
+          link: 'https://www.youtube.com/watch?v=qf6MR4o58cs ',
+        },
+      ]
     },
     computedData() {
-      const data = this.$config.complementario
+      const data = this.complementarioData
       return data.map(item => {
         let nuevoLink = []
         if (item.link) {

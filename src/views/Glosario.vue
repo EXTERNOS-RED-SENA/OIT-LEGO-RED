@@ -20,10 +20,48 @@ import plantillaMixins from '@/js/plantillaMixins'
 export default {
   name: 'Glosario',
   mixins: [plantillaMixins],
+  data() {
+    return {
+      glosarioData: [
+        {
+          termino: 'ACID',
+          significado:
+            'Acrónimo de Atomicidad, Consistencia, Aislamiento y Durabilidad; propiedades que garantizan que las transacciones en una base de datos sean fiables.',
+        },
+        {
+          termino: 'Algoritmo',
+          significado:
+            'Conjunto ordenado y finito de operaciones sistemáticas que permite hacer un cálculo y hallar la solución de un problema específico.',
+        },
+        {
+          termino: 'Base de datos',
+          significado:
+            'Sistema organizado para recopilar, almacenar y gestionar datos de manera estructurada y eficiente.',
+        },
+        {
+          termino: 'CRUD',
+          significado:
+            '<i>Acrónimo de Create, Read, Update, Delete;</i> operaciones básicas que se pueden realizar sobre datos almacenados.',
+        },
+        {
+          termino: '<i>Dataset</i>',
+          significado:
+            'Conjunto de datos organizados y formateados de manera específica para su uso en análisis o entrenamiento de modelos.',
+        },
+        {
+          termino: 'Datos estructurados',
+          significado:
+            'Información que está organizada en un formato predefinido y fácilmente procesable por máquinas, típicamente en tablas con filas y columnas.',
+        },
+        {
+          termino: 'ETL',
+          significado:
+            '<i>Extract, Transform, Load </i>(Extraer, Transformar, Cargar); proceso que permite a las organizaciones mover datos desde múltiples fuentes, reformatearlos y limpiarlos, y cargarlos en otra base de datos.',
+        },
+      ],
+    }
+  },
   computed: {
-    glosarioData() {
-      return this.$config.glosario
-    },
     orderedData() {
       const newGlosarioData = [...this.glosarioData]
       newGlosarioData.forEach(element => {

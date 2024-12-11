@@ -10,23 +10,35 @@
       hr.my-3
 </template>
 <script>
-import plantillaMixins from '@/js/mixins/plantillaMixins'
 export default {
   name: 'Referencias',
-  mixins: [plantillaMixins],
+  data: () => ({
+    referencias: [
+      {
+        referencia:
+          'Antonio, P. P. (2022). Gestión de bases de datos. Ediciones Paraninfo, S.A.',
+        link: 'http://google.com',
+      },
+      {
+        referencia:
+          'Díaz, C. O., Soler, P., Pérez, M. & Mier, A. (2024). OMASHU: La ciencia detrás del éxito; Big Data e IA en los eSports. Revista SISTEMAS, 170, 61-79.',
+      },
+    ],
+  }),
   computed: {
-    referenciasData() {
-      return this.$config.referencias
-    },
     orderedData() {
-      const ArrayOrdered = [...this.referenciasData].sort((a, b) => {
+      return [...this.referencias].sort((a, b) => {
         const afl = this.quitarAcentos(a.referencia.split(' ')[0].toLowerCase())
         const bfl = this.quitarAcentos(b.referencia.split(' ')[0].toLowerCase())
         if (afl < bfl) return -1
         if (afl > bfl) return 1
         return 0
       })
-      return ArrayOrdered
+    },
+  },
+  methods: {
+    quitarAcentos(str) {
+      return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     },
   },
 }
