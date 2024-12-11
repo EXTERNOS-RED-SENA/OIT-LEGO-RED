@@ -1,15 +1,18 @@
-import Vue from 'ecored-base-pkg/src/vue.js'
+import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
-import store from 'ecored-base-pkg/src/store/index.js'
+import router from './js/router'
+import store from './js/store'
+import legored from 'legored'
 
 import './styles/_styles.sass'
 
-import config from './config/global'
-Vue.prototype.$config = config
+import config from './js/global'
+//Vue.prototype.$config = config
 
 const packageJson = require('../package.json')
-Vue.prototype.$package = packageJson
+//Vue.prototype.$package = packageJson
+
+Vue.use(legored, { config, packageJson })
 
 new Vue({
   router,

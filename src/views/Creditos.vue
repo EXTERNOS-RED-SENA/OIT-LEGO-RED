@@ -34,14 +34,8 @@
   
   </template>
 <script>
-import BannerInterno from '../../node_modules/ecored-base-pkg/src/components/plantilla/BannerInterno.vue'
-import Footer from '../bootstrap/Footer'
 export default {
   name: 'Creditos',
-  components: {
-    BannerInterno,
-    Footer,
-  },
   data: () => ({
     configTitulos: {
       liderEquipo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
