@@ -214,7 +214,7 @@
             p.mb-0 Los arreglos, por ejemplo, son una de las estructuras más básicas y ampliamente utilizadas. Imaginemos un array como una fila de casilleros numerados: cada casillero puede contener un dato, y podemos acceder directamente a cualquier casillero conociendo su número. Esta estructura es ideal cuando conocemos de antemano el tamaño de nuestros datos y necesitamos acceder a elementos específicos rápidamente. 
 
         .bg4.p-3  
-          pmb-0 Las listas enlazadas, por otro lado, son como una cadena de elementos donde cada uno conoce la ubicación del siguiente. Esta estructura es más flexible que los arreglos, ya que podemos agregar o eliminar elementos fácilmente, pero requiere más tiempo para encontrar un elemento específico, ya que debemos recorrer la lista desde el principio.  
+          p.mb-0 Las listas enlazadas, por otro lado, son como una cadena de elementos donde cada uno conoce la ubicación del siguiente. Esta estructura es más flexible que los arreglos, ya que podemos agregar o eliminar elementos fácilmente, pero requiere más tiempo para encontrar un elemento específico, ya que debemos recorrer la lista desde el principio.  
                                                    
     p.mb-5 Los árboles y las hash tables son estructuras más complejas que nos permiten representar relaciones jerárquicas y conexiones entre datos. Estas estructuras son fundamentales en muchos algoritmos de inteligencia artificial, especialmente en áreas como el procesamiento del lenguaje natural y el análisis de redes sociales.
 
